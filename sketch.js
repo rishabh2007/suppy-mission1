@@ -28,17 +28,17 @@ function setup() {
 	groundSprite.shapeColor=color(255)
 	 
 	line1=createSprite(width/2,height-50,200,20);
-	line1.shapeColor("red");
+	line1.shapeColor="red";
 	line2=createSprite(510,610,20,100);
-	line2.shapeColor("red");
+	line2.shapeColor="red";
 	line3=createSprite(310,610,20,100);
-	line3.shapeColor("red");
+	line3.shapeColor="red";
 
 
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:3, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.4, isStatic:true});
 	World.add(world, packageBody);
 	
 
